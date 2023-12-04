@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="dist/output.css">
+    <!-- <script defer ="src/animation.js"></script> -->
+    <script defer src="src/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="home" class="h-screen">
+        <nav class="flex justify-between items-center px-9 fixed w-full h-24">
+
+            <img src="https://roshankarki21.com.np/images/logo.png">
+            <ul class="flex gap-5 text-lg">
+                <li> <a href="#home" class="hover:border-b-2 hover:border-teal-500 rounded-sm">Home</a></li>
+                <li> <a href="#about" class="hover:border-b-2 hover:border-teal-500 rounded-sm">About</a></li>
+                <li> <a href="#skill" class="hover:border-b-2 hover:border-teal-500 rounded-sm">Skills</a></li>
+                <li> <a href="#project" class="hover:border-b-2 hover:border-teal-500 rounded-sm">Projects</a></li>
+                <li> <a href="#experience" class="hover:border-b-2 hover:border-teal-500 rounded-sm">Experience</a></li>
+                <li> <a href="#contact" class="hover:border-b-2 hover:border-teal-500 rounded-sm">Contact</a></li>
+            </ul>
+
+
+
+            <form class="flex justify-center items-center">
+
+
+                <i class="ri-moon-fill text-4xl mr-2"></i>
+
+                <label class="switch">
+                    <input type="checkbox" name="switch">
+                    <span class="slider round"></span>
+                </label>
+                <i class="ri-sun-fill text-4xl ml-2"></i>
+
+                <!-- <input type="search" class="search rounded-xl w-52 px-6 py-3 " placeholder="search"> -->
+            </form>
+        </nav>
+        <div class="landing flex h-full justify-between items-center px-20">
+            <div class="intro text-4xl">
+                <h1 class="text-5xl">I'M <span class="text-teal-500">Roshan</span> Karki <br>
+                    A <span class="autotype text-teal-500"></span> </h1>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                <script>
+                    var typed = new Typed(".autotype", {
+                        strings: ["Programmer ", "Web Developer", "Tester"],
+                        typeSpeed: 40,
+                        backSpeed: 40,
+                        loop: true
+                    })
+                </script>
+
+
+
+
+
+                You can reach to me if you need any<br>
+                help in making a website for you
+                <div class="mt-7 flex gap-3">
+                    <button
+                        class=" bg-teal-500 border-2 border-teal-500 rounded-md px-3 py-3 text-xl hover:bg-transparent">Download
+                        CV </button>
+                    <button class="border-teal-500 border-2 rounded-md px-3 py-3 text-xl hover:bg-teal-500">Hire me
+                    </button>
+                </div>
+            </div>
+            <div class="social flex flex-col h-screen justify-end">
+                <a href="https://www.freecodecamp.org/" target="_blank"><i class="ri-instagram-fill social"></i></a>
+                <a href="https://www.facebook.com/Roshankarki.17/" target="_blank"><i class="ri-facebook-circle-fill social "></i></a>
+                <i class="ri-linkedin-box-fill"></i>
+                <i class="ri-twitter-x-fill"></i>
+
+
+
+            </div>
+        </div>
+
+
+    </header>
+    <section id="about" class="hide">
+        <h1 class="text-start text-7xl">About</h1>
+        <div class="desceription">
+            <div class="border-teal-500 border-b-2 w-24 mb-5"></div>
+            <p class="pl-16 text-2xl text-justify">&emsp; I am a good listener and learner, able to communicate well
+                with a group and on an induvidual level. I'm a nice fun and friendly person, i'm honest and punctual, I
+                work well in a team but also on my own as i like to set myself goals which i will achieve. I am
+                flexible, reliable and possess excellent time keeping skills. I am able to work well under pressure and
+                adhere to strict deadlines.</p>
+        </div>
+        <div class="flex items-center justify-center">
+
+            <div class="image w-1/2 py-11 pl-16">
+                <img src="https://roshankarki21.com.np/images/user.png" width="400" class="rounded-lg">
+            </div>
+            <div class="describe w-1/2">
+
+                <ul class="flex flex-col ml-11">
+                    <li>Name: Roshan Karki</li>
+                    <li>Degree: Bachelor of Computer Application</li>
+                    <li>Email: roshankarki1276@gmail.com</li>
+                    <li>Address: Khairahani-13, Chitwan, Nepal</li>
+                    <li>Birthday: 11/nov/2000</li>
+                    <li>Experience: 2 Years</li>
+                    <li>Phone: 9845156488</li>
+                    <li>Freelance: Avaliable</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+    <section id="skill" class="hide2">
+        <h1 class="text-7xl text-center">My Skills</h1>
+        <div class="skill flex gap-4 flex-wrap justify-center items-center mt-16 ">
+            <div class="item">
+                <img src="dist/asset/js.svg" alt="">
+                <h2>JavaScript</h2>
+            </div>
+            <div class="item">
+                <img src="dist/asset/git.svg">
+                <h2>Git</h2>
+            </div>
+            <div class="item">
+                <img src="dist/asset/html.svg" alt="">
+                <h2>HTML</h2>
+            </div>
+            <div class="item">
+                <img src="dist/asset/linux-96.png">
+                <h2>linux</h2>
+            </div>
+            <div class="item">
+                <img src="dist/asset/nodejs.svg" alt="">
+                <h2>Node-JS</h2>
+            </div>
+            <div class="item">
+                <img src="dist/asset/react.svg">
+                <h2>React-JS</h2>
+            </div>
+            <div class="item">
+                <img src="dist/asset/mongodb.svg">
+                <h2>Mongodb</h2>
+            </div>
+            <div class="item">
+                <img src="dist/asset/mysql.svg">
+                <h2>MySQL</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="project" class="hide3">
+        <h1 class="text-7xl text-center">Projects</h1>
+        <div class="main mt-48 px-24 h-1/2 relative">
+
+            <div class="project flex gap-5 pt-2">
+                <div class="img w-1/2">
+                    <img src="dist/asset/projects/gym.png" alt="" height="1080" class=" rounded-md">
+                </div>
+                <div class="description w-1/2 text-center flex flex-col justify-between">
+                    <h1 class="text-4xl">Gym Management System</h1>
+
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero officia ullam nesciunt
+                        praesentium
+                        sint impedit eos pariatur ipsam aspernatur. Quia, impedit aperiam soluta rerum expedita labore!
+                        Dolore minima quia ipsam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione repellendus iure officiis
+                        similique quod, expedita dicta molestiae explicabo illum neque? Omnis architecto aut asperiores
+                        esse
+                        nihil eaque veniam. Itaque, suscipit?
+                    </p>
+                    <div class="flex gap-8 justify-center">
+                        <a href="https://dapper-mochi-a3c8cf.netlify.app/"
+                            class="bg-teal-500 px-2 py-1 rounded-md" target="_blank">Demo</a>
+                        <a href="" class="bg-teal-500 px-2 py-1 rounded-md">View source code</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="project flex gap-5 pt-2 ">
+                <div class="img w-1/2 ">
+                    <img src="dist/asset/projects/Screenshot_20231031_133310-2.png" alt="" height="1080"
+                        class=" rounded-md">
+                </div>
+                <div class="description w-1/2 text-center flex flex-col justify-between">
+                    <h1 class="text-4xl">Arduino </h1>
+
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero officia ullam nesciunt
+                        praesentium
+                        sint impedit eos pariatur ipsam aspernatur. Quia, impedit aperiam soluta rerum expedita labore!
+                        Dolore minima quia ipsam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione repellendus iure officiis
+                        similique quod, expedita dicta molestiae explicabo illum neque? Omnis architecto aut asperiores
+                        esse
+                        nihil eaque veniam. Itaque, suscipit?
+                    </p>
+                    <div class="flex gap-8 justify-center">
+                        <button class="bg-teal-500 px-2 py-1 rounded-md">Demo</button>
+                        <button class="bg-teal-500 px-2 py-1 rounded-md">View source code</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="project flex gap-5 pt-2">
+                <div class="img w-1/2">
+                    <img src="dist/asset/projects/koseli.png" alt="" height="1080" class=" rounded-md">
+                </div>
+                <div class="description w-1/2 text-center flex flex-col justify-between">
+                    <h1 class="text-4xl">Online Courier System</h1>
+
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero officia ullam nesciunt
+                        praesentium
+                        sint impedit eos pariatur ipsam aspernatur. Quia, impedit aperiam soluta rerum expedita labore!
+                        Dolore minima quia ipsam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione repellendus iure officiis
+                        similique quod, expedita dicta molestiae explicabo illum neque? Omnis architecto aut asperiores
+                        esse
+                        nihil eaque veniam. Itaque, suscipit?
+                    </p>
+                    <div class="flex gap-8 justify-center">
+                        <a href="http://koseli.great-site.net/?i=1" class="bg-teal-500 px-2 py-1 rounded-md" target="_blank">Demo</a>
+                        <a href="" class="bg-teal-500 px-2 py-1 rounded-md">View source code</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <a class="prev absolute left-0 top-1/2 bg-slate-400 p-3 rounded-lg hover:scale-110 cursor-pointer"
+                id="left">❮</a>
+            <a class="next absolute right-0 top-1/2 bg-slate-400 p-3 rounded-lg hover:scale-110 cursor-pointer"
+                id="right">❯</a>
+        </div>
+    </section>
+    <section id="experience" class="hide4">
+        <h1 class="text-7xl text-start">Experience</h1>
+        <div class="exp ml-40 relative">
+            <h1 class="text-3xl my-6">Backend Node-JS</h1>
+            <div class="exp-desc">
+                <h2></h2>
+                <p class="text-justify w-3/4">Lorem ipsum dolor sit amet, dolor repellat deleniti officiis voluptatem
+                    quas labore cupiditate iure ullam doloribus aliquam voluptates. Ratione earum reprehenderit iure,
+                    esse assumenda minima vero delectus consequuntur. Laborum eligendi nisi, doloremque, ab sint id enim
+                    in vel molestias, nihil vero suscipit a? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Inventore, repellat! Mollitia nostrum, dolor repellat deleniti officiis voluptatem quas labore
+                    cupiditate iure ullam doloribus aliquam voluptates. Ratione earum reprehenderit iure, esse assumenda
+                    minima vero delectus consequuntur. Laborum eligendi nisi, doloremque, ab sint id enim in vel
+                    molestias, nihil vero suscipit a?</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="hide5">
+        <h1 class="text-center text-7xl">Contact Me</h1>
+
+        <div class="flex mt-16 items-center">
+
+            <div class="links w-1/2">
+                
+                <i class="ri-mail-send-line"></i>
+                send mail
+
+            </div>
+            <div class="form w-1/2">
+                <form class="flex flex-col w-5/6 m-auto">
+                    <label>Name</label>
+                    <input type="name" name="name" class="text-black" placeholder="Your Name">
+                    <label>Email</label>
+                    <input type="email" name="email" class="text-black" placeholder="Your Email">
+                    <label for="message">Message</label>
+                    <textarea name="message" class="h-40 text-black" placeholder="Your Message"></textarea>
+                    <message class="text-green-500 mt-2 hidden ">You have sucessfully send the message........</message>
+                    <input type="submit" class="bg-teal-500 my-6" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

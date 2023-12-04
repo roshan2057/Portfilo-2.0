@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --bg: #34353b;
+    --for: white; 
+    --card:#3d3e42;
+
+    /* --for: #34353b;
+    --bg: rgb(236, 236, 236);
+    --card: rgb(165, 164, 164); */
+}
+/* icons  */
+.social {
+    font-size: 50px;
+}
+.social a:hover{
+    transform: translateY(-5px);
+    scale: 1.4;
+    transition: 0.4s ease-out;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.8s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--bg);
+    color: var(--for);
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-image: url('asset/bg.png');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+nav{
+    background-color: var(--bg);
+    z-index: 99;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.search {
+    background-color: #3d3e42;
+}
+
+section {
+    height: 100vh;
+
+    padding: 100px;
+}
+
+h1 {
+    font-family: "Libre Baskerville", serif;
+}
+
+ul li{
+    font-size: x-large;
+    margin:10px 0px;
+}
+
+.item{
+    width: 20vw;
+    height: 17vw;
+    background-color: var(--card);
+    border-radius: 20px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skill .item {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+}
+
+.skill .item:hover{
+    background-color: #0bceaf;
+    color: black;
+    transform: translateY(-12px);
+}
+
+.skill .item img {
+    width: fit-content;
+    height: 10vw;
+    z-index: 30;
+}
+
+
+.exp h1::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    color: #0bceaf;
+    background-color: #0bceaf;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 7.5%;
+    left: -5%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px #0bceaf;
+}
+
+.exp-desc p::before {
+    content: "";
+    height: 150px;
+    width: 2.5px;
+    background-color: #fbfbfb;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 65%;
+    left: -5%;
+}
+
+
+form input , form textarea{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+/* for togle switch  */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--bg);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--for);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 10px var(--bg);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  /* end togle switch  */
+
+
+/* animation  */
+@media(prefers-reduced-motion){
+    .hide{
+        transition: none;
+    }
+}
+.hide{
+    opacity: 0;
+    transform: scaleX(-0.1); 
+    transition: opacity 1.8s, transform 1.5s;
+}
+.hide2{
+    opacity: 0;
+    transform: translateX(-100%); 
+    transition: opacity 1.8s, transform 1.5s;
+}
+
+.hide3{
+    opacity: 0;
+    transform:scalex(0.5); 
+    transition: opacity 1.8s, transform 1.5s;
+}
+.hide4{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1.8s, transform 1s;
+}
+.hide5{
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 1.8s, transform 1.5s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+
+}
+
+
+
+
+
+
+
+
+
