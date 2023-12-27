@@ -256,3 +256,25 @@ form input , form textarea{
 
 
 
+@media only screen and (max-width: 600px) {
+    section {
+    
+        padding: 20px;
+    }
+    ul li{
+        font-size: small;       
+    }
+    .item{
+        width: 30vw;
+        height: 30vw;
+    }
+    .exp-desc p::before {
+        height: 350px;
+        top: 57%;
+    }
+    .exp h1::before {
+        top: 4%;
+        left: -6%;
+    } 
+}
+  
